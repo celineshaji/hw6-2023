@@ -15,18 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //play the video and update the volume information
 document.querySelector("#play").addEventListener("click", function() {
-    console.log("Play Video");
+	console.log("Play Video");
     video.play();
     volume.innerHTML = volumeSlider.value + '%';
 });
 
 // pause the video
 document.querySelector("#pause").addEventListener("click", function() {
-    console.log("Pause Video");
+	console.log("Pause Video");
     video.pause();
 });
 
-// slow down, slow down the current video speed by 10% each time the button is clicked and log the new speed to the console
+//slow the current video speed by 10% each time the button is clicked and log the new speed to the console
 document.querySelector("#slower").addEventListener("click", function() {
     video.playbackRate -= 0.1;
     console.log("New speed:", video.playbackRate);
